@@ -1,0 +1,5 @@
+{
+  "name": "Minimalist Countdown Timer",
+  "description": "A clean, minimalist countdown timer with reset, pause, and extra time features.",
+  "requestFramePermissions": []
+}
