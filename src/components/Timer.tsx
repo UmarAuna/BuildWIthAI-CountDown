@@ -530,12 +530,16 @@ export default function Timer({ initialMinutes = 90 }: TimerProps) {
           transition={{ delay: 0.8 }}
           className="mt-12 text-center"
         >
-          <p className={cn(
-            "text-xs font-medium tracking-widest uppercase",
-            isDarkMode ? "text-neutral-600" : "text-neutral-400"
+          <div className={cn(
+            "text-[10px] font-bold tracking-[0.2em] uppercase space-y-1.5",
+            isDarkMode ? "text-neutral-600" : "text-neutral-500"
           )}>
-            Designed for Focus
-          </p>
+            <div>Designed for Focus</div>
+            <div className="flex items-center justify-center gap-1 transition-opacity cursor-default">
+              <span className="text-[9px] lowercase font-medium tracking-normal opacity-60">by</span>
+              <span className="tracking-tight normal-case">GDG Minna</span>
+            </div>
+          </div>
         </motion.div>
       </motion.div>
 
